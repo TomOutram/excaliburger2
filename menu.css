@@ -1,0 +1,212 @@
+
+/* !!FOR TEST!!*/
+
+.item-display-container {
+	display: none;
+}
+
+/* ============================================================================================
+ MENU SUB-NAV
+============================================================================================ */
+.menu-sub-nav {
+	display: flex;
+	justify-content: center;
+	margin: 2rem 0;
+}
+.menu-sub-nav a {
+	color: #505050;
+	font-weight: bold;
+	font-size: 1.2rem;
+	padding: 0 1rem;
+	text-decoration: none;
+}
+.menu-sub-nav a + a {
+	border-left: 3px solid #505050;
+}
+.menu-sub-nav a.active-link, .menu-sub-nav a:hover {
+	color: red;
+}
+/* ============================================================================================
+ MOBILE MENU SUB-NAV
+============================================================================================ */
+.mobile-menu-sub-nav {
+	display: none;
+}
+.sub-nav-button img {
+	display: block;
+	width: 35%;
+}
+.sub-nav-button {
+	display: flex;
+	justify-content: center;
+	width: 33.33%;
+	padding: 10px 0;
+	background-color: #707070;
+}
+.sub-nav-button:hover, .active-sub-nav-btn {
+	background-color: #505050;
+}
+/* ============================================================================================
+ MENU HEADER
+============================================================================================ */
+.menu-header {
+	background-color: #b0b0b0;
+	padding: 2.12rem 1.5rem;
+	position: relative;
+	margin-bottom: 4rem;
+}
+.menu-header img {
+	width: 14.25rem;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 2.5rem;
+}
+.menu-info {
+	margin: 0 4rem 0 16.5rem;
+}
+.menu-info h1 {
+	font-size: 2.2rem;
+	margin-bottom: 0.6rem;
+}
+.menu-info p {
+	line-height: 1.6;
+}
+/* ============================================================================================
+ MENU ITEMS 
+============================================================================================ */
+.menu-item-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 2rem;
+}
+.item {
+	text-align: center;
+	flex-basis: 23%;
+	margin-left: 1.6%;
+	margin-bottom: 2.5rem;
+}
+.item p {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #505050;
+}
+.product-image {
+	padding: 1.5rem;
+	width: 100%;
+	transition: transform .2s;
+	-webkit-backface-visibility: hidden; 
+  -ms-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+	-ms-interpolation-mode: bicubic;
+	min-height: 1px;
+}
+.product-image:hover {
+	transform: scale(1.06);
+	cursor: pointer;
+	-ms-interpolation-mode: bicubic;
+}
+/* ============================================================================================
+ MEDIA QUERIES 
+============================================================================================ */
+@media (max-width: 1025px) {
+	/*------------ MENU ITEMS ------------*/
+	.item {
+		flex-basis: 30.6%;
+		margin-left: 2.05%
+	}
+	
+	.product-image {
+		padding: 1.5rem 1.5rem 1rem 1.5rem;
+	}
+	
+	.item p {
+		font-size: 1.1em;
+	}
+}
+@media (max-width: 885px) {
+	/*------------ MENU HEADER ------------*/
+	.menu-header {
+		padding: 1.6rem 1.5rem;
+	}
+	.menu-info h1 {
+		font-size: 1.8rem;
+	}
+	.menu-header img {
+		width: 12rem;
+		left: 1rem;
+	}
+	.menu-info {
+		margin: 0 1rem 0 12.5rem;
+	}
+}
+@media (max-width: 750px) {
+	/*------------ SUB NAV ------------*/
+	.menu-sub-nav {
+		margin: 1.5rem 0;
+	}
+	.menu-sub-nav a {
+		font-size: 1rem;
+	}
+	/*------------ MENU HEADER ------------*/
+	.menu-header img {
+		display: none;
+	}
+	.menu-info {
+		margin: 0;
+	}
+	.menu-info p {
+		font-size: 0.9rem;
+	}
+	.menu-header {
+		margin-bottom: 1rem;
+	}
+}
+@media (max-width: 700px) {
+	/*------------ MENU ITEMS ------------*/
+	.product-image {
+		padding: 1rem;
+	}	
+	.item p {
+		font-size: 0.96em;
+	}
+	.menu-item-container {
+		margin-bottom: 0.5rem;
+	}
+} 
+@media (max-width: 600px) {
+	/*------------ MENU HEADER ------------*/
+	.menu-header {
+		padding: 1.5rem;
+		margin-bottom: 0.5rem;
+	}
+	/*------------ SUB NAV ------------*/
+	.menu-sub-nav {
+		display: none;
+	}
+	.mobile-menu-sub-nav {
+		display: flex;
+	}
+	/*------------ MENU ITEMS ------------*/
+	.item {
+		flex-basis: 46.1%;
+		margin-left: 2.6%
+	}
+	.product-image {
+		width: 75%;
+		padding: 0.5rem;
+	}
+	.menu-item-container {
+		padding: 1.5em 0;
+	}
+}
+@media (max-width: 400px) {
+	/*------------ MENU HEADER ------------*/
+	.menu-info h1 {
+		font-size: 1.6rem;
+	}
+	/*------------ MENU ITEMS ------------*/
+	.item p {
+		font-size: 0.72em;
+	}
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME | EXCALIBURGER</title>
+  <link rel="stylesheet" href="home.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" id="nav-logo-link"><img id="nav-logo" src="images/sample-logo.png" alt="ExcaliBurger logo" title="ExcaliBurger logo"/></a>
+      <div class="main-links-container">
+        <a href="index.html">HOME</a>
+				<a href="menu-burgers.html">MENU</a>
+        <a href="about-us.html">THE LEGEND</a>
+        <a href="stores.html">STORES</a>
+      </div>
+      <button id="menu-button"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+	
+	<div id="myNav" class="overlay">		
+		<button id="close-button"><i class="fas fa-times"></i></button>
+		<div class="overlay-content">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="menu-burgers.html">MENU</a></li>
+				<li><a href="about-us.html">THE LEGEND</a></li>
+				<li><a href="stores.html">STORES</a></li>
+			</ul>
+		</div>		
+	</div>
+
+  <main>
+    <div class="main-container">
+      <!-- ===================== SLIDER ==================== -->
+			<div class="slider-container">				
+				<div class="slider-slides">
+					<img src="images/slide-placeholder-large-03.png" id="lastClone" class="slider-image" />
+					<img src="images/slide-placeholder-large-01.png" id="slide1" class="slider-image" />
+					<img src="images/slide-placeholder-large-02.png" id="slide2" class="slider-image" />
+					<img src="images/slide-placeholder-large-03.png" id="slide3" class="slider-image" />
+					<img src="images/slide-placeholder-large-01.png" id="firstClone" class="slider-image" />
+				</div>
+				<div class="slider-dot-container">
+					<div class="slider-dot" id="dot1"></div>
+					<div class="slider-dot" id="dot2"></div>
+					<div class="slider-dot" id="dot3"></div>
+				</div>
+				<a id="prevBtn">&#10094;</a>
+				<a id="nextBtn">&#10095;</a>				
+			</div>
+			<!-- ================================================= -->
+      <img class="promotion-image-large" src="images/promotion-placeholder.png"/>
+      <img class="promotion-image-large" src="images/promotion-placeholder.png"/>
+      <img class="promotion-image-small" src="images/promotion-placeholder-small.png"/>
+      <img class="promotion-image-small" src="images/promotion-placeholder-small.png"/>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-links-container">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &#38; Conditions</a>
+        <a href="#">Contact</a>
+        <a href="#">Sitemap</a>
+      </div>
+      <div class="social-media-links-container">
+        <a class="social-logo" href="#"><img src="images/test-social-logo.png"/></a>
+        <a class="social-logo" href="#"><img src="images/test-social-logo.png"/></a>
+        <a class="social-logo" href="#"><img src="images/test-social-logo.png"/></a>
+        <a class="social-logo" href="#"><img src="images/test-social-logo.png"/></a>
+      </div>
+      <p id="copyright-info">&#169; 2020 Excaliburger Restaurants (NZ) Limited</p>
+    </div>
+  </footer>
+	
+	<script src="scripts/mobile-menu.js"></script>
+	<script src="scripts/slider.js"></script>
+</body>
+</html>

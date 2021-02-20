@@ -1,0 +1,180 @@
+/* ============================================================================================
+ BACK BUTTON
+============================================================================================ */
+.back-btn-link {
+	text-decoration: none;
+	color: black;
+}
+.back-btn {
+	position: relative;
+	background-color: #b0b0b0;
+	width: 8rem;
+	height: 2.5rem;
+	display: flex;
+	align-items: center;
+	margin: 2rem 0 0 1.75rem;
+	padding-left: 0.7rem;
+	cursor: pointer;
+}
+.back-btn-text {
+	font-weight: bold;
+	font-size: 0.95rem;
+}
+.back-btn::before {
+	content: "";
+	position: absolute;
+	left: -1.25rem;
+	width: 0;
+	height: 0;
+	border-top: 1.25rem solid transparent;
+	border-bottom: 1.25rem solid transparent;
+	border-right: 1.25rem solid #b0b0b0;;
+}
+.back-btn:hover {
+	background-color: #909090;
+}
+.back-btn:hover::before {
+	border-right: 1.25rem solid #909090;
+}
+/* ============================================================================================
+ ITEM DISPLAY
+============================================================================================ */
+.item-display {
+	display: flex;
+	margin-top: 2rem;
+}
+.item-image-container {
+	flex-basis: 40%;
+	padding: 2.5rem;
+}
+.item-image-container img {
+	width: 100%;
+	height: auto;
+}
+.item-description {
+	flex-basis: 60%;
+	padding: 2.5rem;
+}
+.item-description-heading {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+.item-description-text {
+	line-height: 1.6;
+}
+#mobile-item-heading {
+	display: none;
+}
+#filler-ad {
+	display: none;
+}
+/* ============================================================================================
+ NUTRITION INFO
+============================================================================================ */
+.nutrition-table {
+	padding: 0 3rem 3rem 3rem;
+}
+.nutrition-table h3 {
+	font-size: 1rem;
+	margin-bottom: 0.7rem;
+}
+.nutrition-table table {
+	border-collapse: collapse;
+	width: 55%;
+}
+.nutrition-table td {
+	border-top: 1px solid #d0d0d0;
+	padding: 0.3rem 0;
+	font-size: 0.95rem;
+}
+.nutrition-table td.values {
+	text-align: right;
+}
+/* ============================================================================================
+ MEDIA QUERIES
+============================================================================================ */
+@media (min-height: 1025px) {
+	/*------------ ITEM DISPLAY ------------*/
+	#filler-ad {
+		display: block;
+	}
+	.nutrition-table {
+		padding-bottom: 5rem;
+	}
+}
+@media (max-width: 1025px) {
+	/*------------ ITEM DISPLAY ------------*/
+	.item-image-container {
+		padding-left: 1rem;
+	}
+	.item-description {
+		padding-right: 1rem;
+	}
+}
+@media (max-width: 750px) {
+	/*------------ ITEM DISPLAY ------------*/
+	.item-display {
+		flex-direction: column;
+	}
+	#mobile-item-heading {
+		display: block;
+		padding: 0 2.5rem;
+		order: 1;
+		margin: 0;
+	}
+	#web-item-heading {
+		display: none;
+	}
+	.item-image-container {
+		width: 65%;
+		order: 2;
+		align-self: center;
+		padding: 2rem 1rem;
+	}
+	.item-description {
+		padding: 0 2.5rem 3rem 2.5rem;
+		order: 3;
+	}
+	.nutrition-table table {
+		width: 100%;
+	}
+	/*------------ BACK BUTTON ------------*/
+	.back-btn {
+		width: 7rem;
+		height: 2rem;
+		margin: 1rem 0 0 1.75rem;
+	}
+	.back-btn-text {
+		font-size: 0.8rem;
+	}
+	.back-btn::before {
+		left: -1rem;
+		border-top: 1rem solid transparent;
+		border-bottom: 1rem solid transparent;
+		border-right: 1rem solid #b0b0b0;;
+	}
+	.back-btn:hover::before {
+		border-right: 1rem solid #909090;
+	}
+}
+@media (max-width: 600px) {
+	/*------------ ITEM DISPLAY ------------*/
+	#mobile-item-heading {
+		font-size: 1.6rem;
+	}
+	#mobile-item-heading {
+		padding: 0 1rem;
+	}
+	.item-description {
+		padding: 0 1.5rem 3rem 1.5rem;
+	}
+	.nutrition-table {
+		padding: 0 1.5rem 3rem 1.5rem;
+	}
+}
+@media (max-width: 400px) {
+	/*------------ ITEM DISPLAY ------------*/
+	.item-image-container {
+		width: 85%;
+	}
+}
