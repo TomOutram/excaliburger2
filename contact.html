@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HOME | EXCALIBURGER</title>
+  <title>CONTACT | EXCALIBURGER</title>
   <link rel="stylesheet" href="home.css">
+	<link rel="stylesheet" href="contact.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
 <body>
@@ -35,28 +36,66 @@
 
   <main>
     <div class="main-container">
-      <!-- ===================== SLIDER ==================== -->
-			<div class="slider-container">				
-				<div class="slider-slides">
-					<img src="images/slide-placeholder-large-03.png" id="lastClone" class="slider-image" />
-					<img src="images/slide-placeholder-large-01.png" id="slide1" class="slider-image" />
-					<img src="images/slide-placeholder-large-02.png" id="slide2" class="slider-image" />
-					<img src="images/slide-placeholder-large-03.png" id="slide3" class="slider-image" />
-					<img src="images/slide-placeholder-large-01.png" id="firstClone" class="slider-image" />
+			<h1 class="contact-title">Contact</h1>
+			<p class="contact-description">
+			Have some feedback? We'd love to hear from you.
+			</p>
+			<div class="contact-container">
+				<!-- contact form -->
+			  <div class="contact-form-container">
+					<form>
+						<div class="form-row">						
+							<div class="form-item">
+								<label for="fname">First Name:</label><br />
+								<input type="text" id="fname" name="fname">
+							</div>
+							<div class="form-item">
+								<label for="lname">Last Name:</label><br />
+								<input type="text" id="lname" name="lname">
+							</div>						
+						</div>
+						
+						<div class="form-row">						
+							<div class="form-item">
+								<label for="phone">Phone:</label><br />
+								<input type="text" id="phone" name="phone">
+							</div>
+							<div class="form-item">
+								<label for="email">Email:</label><br />
+								<input type="email" id="email" name="email">
+							</div>							
+						</div>
+						
+						<div class="form-row">
+							<div class="form-item">
+								<label for="message">Comments:</label><br />
+								<textarea id="message" name="message">Test</textarea>
+							</div>
+						</div>
+						
+					</form>
 				</div>
-				<div class="slider-dot-container">
-					<div class="slider-dot" id="dot1"></div>
-					<div class="slider-dot" id="dot2"></div>
-					<div class="slider-dot" id="dot3"></div>
+				<!-- contact details -->
+				<div class="contact-details-container">
+					<h2 class="contact-details-heading">Phone</h2>
+					<p class="contact-details-content">0800 494949</p>
+					<h2 class="contact-details-heading">Fax</h2>
+					<p class="contact-details-content">+64.9.727.9844</p>
+					<h2 class="contact-details-heading">Address</h2>
+					<p class="contact-details-content">
+					Excaliburger NZ<br />
+					PO Box 100-424<br />
+					Auckland, New Lynn 0600<br />
+					<br />
+					Excaliburger Main Offices<br />
+					24 Ferntree Place<br />
+					Riverside<br />
+					Auckland, New Zealand
+					</p>
+					<h2 class="contact-details-heading">Email</h2>
+					<p class="contact-details-content">contact@eburger.co.nz</p>
 				</div>
-				<a id="prevBtn">&#10094;</a>
-				<a id="nextBtn">&#10095;</a>				
 			</div>
-			<!-- ================================================= -->
-      <img class="promotion-image-large" src="images/promotion-placeholder.png"/>
-      <img class="promotion-image-large" src="images/promotion-placeholder.png"/>
-      <img class="promotion-image-small" src="images/promotion-placeholder-small.png"/>
-      <img class="promotion-image-small" src="images/promotion-placeholder-small.png"/>
     </div>
   </main>
 

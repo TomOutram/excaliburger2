@@ -1,0 +1,50 @@
+.contact-container {
+	display: flex;
+	padding: 3rem;
+}
+
+.contact-title {
+	text-align: center;
+	font-size: 2rem;
+	margin-top: 3rem;
+	margin-bottom: 0.6rem;
+}
+
+.contact-description {
+	text-align: center;
+	line-height: 1.6;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #b0b0b0;
+	margin-bottom: 2rem;
+}
+/* CONTACT DETAILS =====================================================================================*/
+.contact-details-container {
+	flex-basis: 35%;
+	background: #d0d0d0;
+	padding: 1.5rem;
+}
+.contact-details-heading {
+	font-size: 1rem;
+	color: #202020;
+	margin-bottom: 0.3rem;
+}
+.contact-details-content {
+	color: #202020;
+	margin-bottom: 1.2rem;
+}
+/* CONTACT FORM =====================================================================================*/
+.contact-form-container {
+	flex-basis: 65%;
+	padding: 1.5rem;
+}
+.form-row {
+	display: flex;
+}
+.form-item {
+	flex-basis: 50%;
+	padding: 0.5rem;
+}
+.form-item input {
+	width: 100%;
+}

@@ -37,6 +37,8 @@ var size;
 size = carouselImages[0].width;
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
+
+
 // Next/Prev Button Functions
 var nextAction = function() {
 	if (counter >= carouselImages.length -1) return;
@@ -53,6 +55,13 @@ var prevAction = function() {
 	counter --;
 	carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 }
+
+// Automatic Slide
+function autoSlide() {
+	console.log("fired");
+	nextAction();
+}
+//setInterval(autoSlide, 4000);
 
 // Button Listeners
 nextBtn.addEventListener('click', nextAction);
