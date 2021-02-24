@@ -1,0 +1,42 @@
+.privacy-main-heading {
+	text-align: center;
+	font-size: 2.2rem;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+.privacy-article {
+	margin-bottom: 5rem;
+	padding: 1rem;
+}
+.privacy-article section {
+	margin-bottom: 2rem;
+}
+.privacy-article h2 {
+	margin-bottom: 0.5rem;
+}
+.privacy-article p {
+	margin-bottom: 1rem;
+	line-height: 1.6;
+}
+@media (max-width: 1200px) {
+	.privacy-article {
+		padding: 2rem;
+	}
+}
+@media (max-width: 400px) {
+	.privacy-article {
+		padding: 1rem;
+	}
+	.privacy-main-heading {
+		font-size: 1.9rem;
+	}
+	.privacy-article h2 {
+		margin-bottom: 0.5rem;
+		font-size: 1.2
+	}
+	.privacy-article p {
+		font-size: 0.9rem;
+		margin-bottom: 1rem;
+		line-height: 1.6;
+	}
+}
