@@ -1,0 +1,214 @@
+/* ================================================= <<<< Images */
+.about-us-image, .about-us-image-small {
+	width: 100%;
+	display: block;
+}
+
+.about-us-image-small {
+	display: none;
+}
+
+/* ================================================= <<<< Heading */
+.legend-heading {
+	font-size: 3.2rem;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 3.5rem;
+}
+/* ================================================= <<<< History Article */
+.history-article {
+	margin: 0 auto;
+	width: 75%;
+	padding-top: 3.5rem;
+}
+.history-article-figure {
+	margin-bottom: 1.5rem;
+}
+.history-article-pic {
+	width: 100%;
+	display: block;
+}
+.history-article-pic-caption {
+	font-size: 0.8rem;
+	text-align: center;
+	margin-top: 0.6rem;
+	color: #505050;
+	font-style: italic;
+}
+.history-article-text {
+	font-size: 1.15rem;
+	line-height: 1.6;
+	margin-bottom: 2.5rem;
+}
+/* ================================================= <<<< Timeline */
+.timeline-heading {
+	font-size: 2.5rem;
+	text-align: center;
+}
+.timeline-container {
+	margin: 1.5rem auto 3rem auto;
+	width: 75%;
+	position: relative;
+}
+.timeline-section {
+	display: flex;
+	position: relative;
+}
+.timeline-dot {
+	width: 1.5rem;
+	height: 1.5rem;
+	background: #505050;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 2rem;
+}
+.text-container {
+	width: 50%;
+	padding: 1.8rem 0;
+}
+.arrow-container {
+	width: 50%;
+	padding: 1.5rem 0;
+}
+.text-container-right, .arrow-container-right {
+	padding-left: 2rem;
+}
+.text-container-left, .arrow-container-left {
+	padding-right: 2rem;
+}
+.line {
+	position: absolute;
+	background: #505050;
+	width: 0.5rem;
+	height: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+/* ---- text ---- */
+.timeline-text {
+	line-height: 1.6;
+	font-size: 1.1rem;
+}
+.text-left {
+	text-align: right;
+}
+.timeline-subheading {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 0.75rem;
+}
+.timeline-subheading-left {
+	text-align: right;
+}
+/* ---- arrow ---- */
+.arrow {
+	position: relative;
+	background-color: #b0b0b0;
+	width: 13rem;
+	height: 2.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.arrow-text {
+	font-weight: bold;
+	font-size: 0.95rem;
+}
+.arrow-right {
+	margin-left: 3rem;
+}
+.arrow-right::before {
+	content: "";
+	position: absolute;
+	left: -1.25rem;
+	width: 0;
+	height: 0;
+	border-top: 1.25rem solid transparent;
+	border-bottom: 1.25rem solid transparent;
+	border-right: 1.25rem solid #b0b0b0;;
+}
+.arrow-left {
+	margin: 0 3rem 0 auto;
+}
+.arrow-left::after {
+	content: "";
+	position: absolute;
+	right: -1.25rem;
+	width: 0;
+	height: 0;
+	border-top: 1.25rem solid transparent;
+	border-bottom: 1.25rem solid transparent;
+	border-left: 1.25rem solid #b0b0b0;;
+}
+/* ---- images ---- */
+.timeline-image {
+  width: 15rem;
+	margin-top: 3rem;
+	display: block;
+}
+.timeline-image-left {
+  margin-right: 3rem;
+}
+.timeline-image-right {
+  margin-left: 3rem;
+}
+
+/* ================================================= <<<< Media Queries */
+@media (max-width: 1140px) {
+	.history-article {
+		width: 85%;
+		padding: 3.5rem 0 0 0; 
+	}
+	.timeline-container {
+		width: 85%;
+	}
+}
+@media (max-width: 850px) {
+	.history-article {
+		width: 100%;
+		padding: 3.5rem 2rem 0 2rem; 
+	}
+	.timeline-container {
+		width: 100%;
+		padding: 0 2rem;
+	}
+	.timeline-image {
+		width: 13rem;
+		margin-top: 2rem;
+	}
+	.timeline-text {
+		font-size: 1rem;
+	}
+	.timeline-subheading {
+		font-size: 1.3rem;
+	}
+}
+@media (max-width: 600px) {
+	.history-article {
+		padding: 2.5rem 1.5rem 0 1.5rem; 
+	}
+	.legend-heading {
+		font-size: 2.8rem;
+		margin-top: 2.5rem;
+	}
+	.history-article-text {
+		font-size: 1rem;
+		line-height: 1.6;
+		margin-bottom: 1.5rem;
+	}
+}
+@media (max-width: 400px) {
+	.history-article {
+		padding-top: 2rem; 
+	}
+	.legend-heading {
+		font-size: 2rem;
+		margin-top: 2rem;
+	}
+	.history-article-text {
+		font-size: .9rem;
+	}
+}
