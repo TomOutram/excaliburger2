@@ -55,12 +55,34 @@
 	position: relative;
 	margin-bottom: 4rem;
 }
-.menu-header img {
+.flag-bar {
+	width: 100%;
+	height: 0.6rem;
+	background: #303030;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+@keyframes flag-drop {
+	0% {transform: translateY(-15rem);}
+	85% {transform: translateY(0.4rem);}
+	100% {transform: translateY(0rem);}
+}
+
+.menu-header-img-container {
 	width: 14.25rem;
 	height: auto;
 	position: absolute;
 	top: 0;
 	left: 2.5rem;
+	overflow: hidden;
+}
+.menu-header img {
+	animation-name: flag-drop;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-out;
 }
 .menu-info {
 	margin: 0 4rem 0 16.5rem;
@@ -132,7 +154,7 @@
 	.menu-info h1 {
 		font-size: 1.8rem;
 	}
-	.menu-header img {
+	.menu-header-img-container {
 		width: 12rem;
 		left: 1rem;
 	}

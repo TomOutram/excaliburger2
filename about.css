@@ -66,11 +66,13 @@
 }
 .text-container {
 	width: 50%;
-	padding: 1.8rem 0;
+	padding: 2rem 0;
 }
 .arrow-container {
 	width: 50%;
 	padding: 1.5rem 0;
+	display: flex;
+	flex-direction: column;
 }
 .text-container-right, .arrow-container-right {
 	padding-left: 2rem;
@@ -111,7 +113,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	cursor: pointer;
 }
 .arrow-text {
 	font-weight: bold;
@@ -145,15 +146,16 @@
 }
 /* ---- images ---- */
 .timeline-image {
-  width: 15rem;
-	margin-top: 3rem;
+  width: 100%;
+	padding: 3rem;
 	display: block;
 }
 .timeline-image-left {
-  margin-right: 3rem;
+
+	align-self: flex-end;
 }
 .timeline-image-right {
-  margin-left: 3rem;
+
 }
 
 /* ================================================= <<<< Media Queries */
@@ -176,8 +178,7 @@
 		padding: 0 2rem;
 	}
 	.timeline-image {
-		width: 13rem;
-		margin-top: 2rem;
+		padding: 2rem;
 	}
 	.timeline-text {
 		font-size: 1rem;
@@ -187,6 +188,12 @@
 	}
 }
 @media (max-width: 600px) {
+	.about-us-image {
+		display: none;
+	}
+	.about-us-image-small {
+		display: block;
+	}
 	.history-article {
 		padding: 2.5rem 1.5rem 0 1.5rem; 
 	}
@@ -198,6 +205,57 @@
 		font-size: 1rem;
 		line-height: 1.6;
 		margin-bottom: 1.5rem;
+	}
+	/* ===================== Timeline Stuff =========================== */
+	.section-even {
+		flex-direction: column;
+	}
+	.section-odd {
+		flex-direction: column-reverse;
+	}
+	.arrow-container, .text-container {
+		width: 100%;
+	}
+	.text-container-left {
+		padding-right: 0;
+		padding-left: 2rem;
+	}
+	.text-left {
+		text-align: left;
+	}
+	.timeline-subheading-left {
+		text-align: left;
+	}
+	.arrow-container {
+		padding-bottom: 0;
+	}
+	.arrow-left {
+		margin: 0 0 0 3rem;
+	}
+	.arrow-left::after {
+		content: '';
+		border:none;
+	}
+	.arrow-left::before {
+		content: "";
+		position: absolute;
+		left: -1.25rem;
+		width: 0;
+		height: 0;
+		border-top: 1.25rem solid transparent;
+		border-bottom: 1.25rem solid transparent;
+		border-right: 1.25rem solid #b0b0b0;;
+	}
+	.timeline-image {
+		display: none;
+	}
+	.line {
+		left: 2rem;
+		transform: none;
+	}
+	.timeline-dot {
+		left: -0.5rem;
+		transform: none;
 	}
 }
 @media (max-width: 400px) {
@@ -211,4 +269,52 @@
 	.history-article-text {
 		font-size: .9rem;
 	}
+	.timeline-text {
+		font-size: .9rem;
+	}
+	.text-container-left, .text-container-right {
+		padding-left: 1rem;
+	}
+	/* ===================== Timeline Stuff =========================== */
+	.line {
+		
+		width: 0.4rem;
+		
+		left: 1.5rem;
+		transform: none;
+	}
+	.timeline-dot {
+		
+		width: 1.2rem;
+		height: 1.2rem;
+		
+		left: -0.9rem;
+		transform: none;
+	}
+	.arrow-container {
+		padding-top: 1.6rem;
+	}
+	.arrow {
+		width: 10rem;
+		height: 2rem;
+	}
+	.arrow-text {
+		font-size: 0.9rem;
+	}
+	.arrow-right, .arrow-left {
+		margin-left: 2rem;
+	}
+	.arrow-right::before, .arrow-left::before {
+		content: "";
+		position: absolute;
+		left: -1rem;
+		width: 0;
+		height: 0;
+		border-top: 1rem solid transparent;
+		border-bottom: 1rem solid transparent;
+		border-right: 1rem solid #b0b0b0;;
+	}
+	
+	
+	
 }
