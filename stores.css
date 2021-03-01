@@ -1,0 +1,64 @@
+
+#map {
+	height: 400px;
+	width: 100%;
+	background: powderblue;
+}
+
+/* STORE INFO BOXES ======================================================================== */
+
+.stores-container {
+	margin: 4rem 0 1rem 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.store {
+	border: 1px solid #d0d0d0;
+	border-radius: 4px;
+	width: 28%;
+	margin-right: 4%;
+	margin-bottom: 3rem;
+}
+
+.store-title {
+	display: flex;
+	align-items: center;
+	background: powderblue;
+	padding: 1rem;
+}
+.store-details {
+	padding: 1rem;
+}
+.store-title-text {
+	font-size: 1.5rem;
+}
+.store-title-icon {
+	width: 12%;
+	margin-right: 0.75rem;
+}
+
+.store-subtitle {
+	font-size: 1.1rem;
+	margin-top: 1.2rem;
+}
+.store-info {
+	margin-top: 0.2rem;
+}
+.store-details table td {
+	padding: 0.4rem 1rem 0 0;
+}
+.trading-days {
+	font-weight: bold;
+}
+.store-icons-container {
+	margin-top: 1rem;
+	display: flex;
+	width: 100%;
+}
+.store-icon {
+	width: 12%;
+	margin-right: 0.5rem;
+}
+
+/* ========================================================================================= */
