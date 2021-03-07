@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap');
 
 * {
   margin: 0;
@@ -58,7 +59,7 @@ nav {
 /* mobile nav */
 #menu-button {
 	display: none;
-	background-color: #909090;
+	background-color: #2B60DE;
 	outline: none;
 	border: none;
 	cursor: pointer;
@@ -78,14 +79,43 @@ nav {
 	z-index: 90;
 	left: 0;
 	top: 0;
-	background-color: #303030;
+	background-color: #161616;
 	overflow-x: hidden;
 	transition: 0.5s;
 }
 
+.overlay-title {
+	font-family: 'Metamorphous';
+	font-size: 1.6rem;
+	position: absolute;
+	top: 2rem;
+	left: 2rem;
+	color: #9a9998;
+	transition: opacity 0.2s ease-in 0.2s;
+}
+
+.overlay-title-tm {
+	font-size: 0.85rem;
+	font-family: 'Open Sans';
+	margin-left: 0.1rem;
+}
+
+.overlay #close-button {
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	font-size: 1.5rem;
+	background-color: #161616;
+	border: none;
+	outline: none;
+	color: #fff;
+	cursor: pointer;
+	transition: opacity 0.2s ease-in 0.2s;
+}
+
 .overlay-content {
 	position: relative;
-	top: 20%;
+	top: 25%;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -97,6 +127,8 @@ nav {
 }
 
 .overlay a {
+	font-family: 'PT Sans';
+	letter-spacing: 1px;
 	text-decoration: none;
 	font-size: 1.6em;
 	color: #fff;
@@ -104,24 +136,6 @@ nav {
 	opacity: 0;
 }
 
-.overlay a:hover {
-	color: #000;
-}
-
-.overlay #close-button {
-	position: absolute;
-	top: 2rem;
-	right: 2rem;
-	font-size: 1.5rem;
-	background-color: #303030;
-	border: none;
-	outline: none;
-	color: #fff;
-	cursor: pointer;
-}
-.overlay #close-button:hover {
-	color: #000;
-}
 /* ============================================================================================
  MAIN 
 ============================================================================================ */
@@ -180,18 +194,17 @@ main {
 .slider-dot-container {
 	position: absolute;
 	z-index: 80;
-	bottom: 25px;
+	bottom: 4%;
 	left:50%;
 	transform: translate(-50%);
 	display: flex;
 }
 .slider-dot {
-	border-radius: 4px;
 	width: 75px;
-	height: 7px;
+	height: 6px;
 	border: 2px solid #fff;
 	cursor: pointer;
-	margin: 0 1rem;
+	margin: 0 0.6rem;
 }
 /* ============================================================================================
  FOOTER 
