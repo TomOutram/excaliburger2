@@ -1,6 +1,7 @@
 /* ================================================= <<<< Images */
 .about-us-image, .about-us-image-small {
 	width: 100%;
+	height: auto;
 	display: block;
 }
 
@@ -108,7 +109,7 @@
 .arrow {
 	position: relative;
 	background-color: #b0b0b0;
-	width: 13rem;
+	width: 85%;
 	height: 2.5rem;
 	display: flex;
 	align-items: center;
@@ -124,6 +125,7 @@
 .arrow-right::before {
 	content: "";
 	position: absolute;
+	top: 0;
 	left: -1.25rem;
 	width: 0;
 	height: 0;
@@ -140,6 +142,7 @@
 	right: -1.25rem;
 	width: 0;
 	height: 0;
+	top: 0;
 	border-top: 1.25rem solid transparent;
 	border-bottom: 1.25rem solid transparent;
 	border-left: 1.25rem solid #b0b0b0;;
@@ -178,13 +181,16 @@
 		padding: 0 2rem;
 	}
 	.timeline-image {
-		padding: 2rem;
+		padding: 3rem 2rem 0 2rem;
 	}
 	.timeline-text {
 		font-size: 1rem;
 	}
 	.timeline-subheading {
 		font-size: 1.3rem;
+	}
+	.arrow {
+		width: 80%;
 	}
 }
 @media (max-width: 600px) {
@@ -242,6 +248,7 @@
 		left: -1.25rem;
 		width: 0;
 		height: 0;
+		top: 0;
 		border-top: 1.25rem solid transparent;
 		border-bottom: 1.25rem solid transparent;
 		border-right: 1.25rem solid #b0b0b0;;
@@ -310,6 +317,7 @@
 		left: -1rem;
 		width: 0;
 		height: 0;
+		top: 0;
 		border-top: 1rem solid transparent;
 		border-bottom: 1rem solid transparent;
 		border-right: 1rem solid #b0b0b0;;

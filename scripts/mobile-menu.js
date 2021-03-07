@@ -1,21 +1,20 @@
-const menuButton = document.querySelector('#menu-button')
-const closeButton = document.querySelector('#close-button')
-const myNav = document.querySelector('#myNav')
-const menuItems = document.querySelectorAll('.overlay a')
+var menuButton = document.querySelector('#menu-button')
+var closeButton = document.querySelector('#close-button')
+var myNav = document.querySelector('#myNav')
+var menuItems = document.querySelectorAll('.overlay a')
 
-menuButton.addEventListener('click', () => {
+menuButton.addEventListener('click', function() {
 	myNav.style.width = '100%'
-	for (let menuItem of menuItems) {
-		console.log(menuItem)
-		menuItem.style.transition = 'opacity 0.2s ease-in 0.2s'
-		menuItem.style.opacity = 1
+	for (i = 0; i <= menuItems.length; i++) {
+		menuItems[i].style.transition = 'opacity 0.2s ease-in 0.2s'
+		menuItems[i].style.opacity = 1
 	}
 })
 
-closeButton.addEventListener('click', () => {
+closeButton.addEventListener('click', function() {
 	myNav.style.width = '0%'
-	for (let menuItem of menuItems) {
-		menuItem.style.transition = 'none'
-		menuItem.style.opacity = 0
+	for (i = 0; i <= menuItems.length; i++) {
+		menuItems[i].style.transition = 'none'
+		menuItems[i].style.opacity = 0
 	}
 })

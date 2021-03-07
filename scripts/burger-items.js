@@ -1,5 +1,6 @@
 // menu links
 const menuLinks = document.querySelectorAll('.item');
+console.log(menuLinks)
 // container divs
 const menuDiv = document.querySelector('.main-menu');
 const itemDiv = document.querySelector('.item-display-container');
@@ -61,7 +62,27 @@ allMyItems.push(burger1);
 allMyItems.push(burger2);
 
 function getItem(itemID) {
-	for (let item of allMyItems) {
+	for (i=0; i < allMyItems.length; i++) {
+		if (allMyItems[i].name == itemID) {
+			webItemsHeading.innerHTML = allMyItems[i].mobileHeading;
+			mobileItemsHeading.innerHTML = allMyItems[i].webHeading;
+			itemDescription.innerHTML = allMyItems[i].itemDesc;
+			energy.innerHTML = allMyItems[i].energyData;
+			protein.innerHTML = allMyItems[i].proteinData;
+			fatTotal.innerHTML = allMyItems[i].fatTotalData;
+			fatSaturated.innerHTML = allMyItems[i].fatSatData;
+			carbohydrate.innerHTML = allMyItems[i].carbsData;
+			sugar.innerHTML = allMyItems[i].sugarData;
+			fibre.innerHTML = allMyItems[i].fibreData;
+			sodium.innerHTML = allMyItems[i].sodiumData;
+			itemImage.src = 'images/' + allMyItems[i].imageName + '.png';
+			itemImage.alt = allMyItems[i].imageAlt;
+			itemImage.title = allMyItems[i].imageTitle;
+		}
+	}
+	
+	
+	/*for (let item of allMyItems) {
 		if (item.name == itemID) {
 			webItemsHeading.innerHTML = item.mobileHeading;
 			mobileItemsHeading.innerHTML = item.webHeading;
@@ -78,16 +99,23 @@ function getItem(itemID) {
 			itemImage.alt = `${item.imageAlt}`;
 			itemImage.title = `${item.imageTitle}`;
 		}
-	}
+	}*/
 }
 function addLinkListeners() {
-	for (let link of menuLinks) {
-		link.addEventListener('click', function() {
+	for (i=0; i < menuLinks.length; i++) {
+		menuLinks[i].addEventListener('click', function() {
 			menuDiv.style.display = 'none';
 			itemDiv.style.display = 'block';
 			getItem(this.id);
 		});
 	}
+	/*for (let link of menuLinks) {
+		link.addEventListener('click', function() {
+			menuDiv.style.display = 'none';
+			itemDiv.style.display = 'block';
+			getItem(this.id);
+		});
+	}*/
 }
 function addbackBtnListener() {
 	backBtn.addEventListener('click', function() {
