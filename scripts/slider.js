@@ -137,11 +137,11 @@ window.addEventListener('resize', function() {
 		slide3Image.src = "images/slide-placeholder-small-03.png"
 		firstCloneImage.src = "images/slide-placeholder-small-01.png"
 	} else {
-		lastCloneImage.src = "images/slide-placeholder-large-03.png"
-		slide1Image.src = "images/slide-placeholder-large-01.png"
-		slide2Image.src = "images/slide-placeholder-large-02.png"
-		slide3Image.src = "images/slide-placeholder-large-03.png"
-		firstCloneImage.src = "images/slide-placeholder-large-01.png"	
+		lastCloneImage.src = "images/big_ad_9.jpg"
+		slide1Image.src = "images/big_ad_1.png"
+		slide2Image.src = "images/big_ad_3.png"
+		slide3Image.src = "images/big_ad_9.jpg"
+		firstCloneImage.src = "images/big_ad_1.png"	
 	}
 	size = carouselImages[0].clientWidth;
 	moveSlider();	

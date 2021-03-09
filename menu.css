@@ -11,20 +11,29 @@
 .menu-sub-nav {
 	display: flex;
 	justify-content: center;
-	margin: 2rem 0;
+	margin: 1.5rem 0;
 }
 .menu-sub-nav a {
+	font-family: 'PT Sans';
 	color: #505050;
 	font-weight: bold;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
+	letter-spacing: 1px;
 	padding: 0 1rem;
 	text-decoration: none;
 }
-.menu-sub-nav a + a {
-	border-left: 3px solid #505050;
+
+.menu-item-seperator {
+	width: 0.5rem;
+	height: 0.5rem;
+	transform: rotate(45deg);
+	margin: 0 0.6rem;
+	align-self: center;
+	background: #666463;
 }
+
 .menu-sub-nav a.active-link, .menu-sub-nav a:hover {
-	color: red;
+	color: #2B60DE;
 }
 /* ============================================================================================
  MOBILE MENU SUB-NAV
@@ -73,13 +82,15 @@
 
 .menu-header-img-container {
 	width: 14.25rem;
-	height: auto;
+	height: 14.5rem;
 	position: absolute;
 	top: 0;
 	left: 2.5rem;
 	overflow: hidden;
 }
 .menu-header img {
+	width: 100%;
+	height: 100%;
 	animation-name: flag-drop;
 	animation-duration: 0.5s;
 	animation-timing-function: ease-out;
@@ -88,11 +99,13 @@
 	margin: 0 4rem 0 16.5rem;
 }
 .menu-info h1 {
+	font-family: 'Metamorphous';
 	font-size: 2.2rem;
 	margin-bottom: 0.6rem;
 }
 .menu-info p {
 	line-height: 1.6;
+	font-weight: 500;
 }
 /* ============================================================================================
  MENU ITEMS 
